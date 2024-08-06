@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$/AOP" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DemoProject" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/RelationDataBase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Spring-redis" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/SpringSecurity" vcs="Git" />
   </component>
 </project>
