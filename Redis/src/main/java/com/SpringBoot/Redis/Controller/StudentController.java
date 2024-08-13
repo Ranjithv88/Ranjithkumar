@@ -4,7 +4,6 @@ import com.SpringBoot.Redis.Model.Student;
 import com.SpringBoot.Redis.Service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -22,6 +21,12 @@ public class StudentController {
     @PostMapping("/post")
     public String postApi (@RequestBody Student student) {
         return service.studentPost(student);
+    }
+
+    @PatchMapping("/patch/{id}")
+    public String patchApi ( @RequestBody Student student, @PathVariable long id) {
+       student.setId(id);
+        return service.patchStudent(student);
     }
 
 }
